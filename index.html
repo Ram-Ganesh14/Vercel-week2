@@ -29,16 +29,16 @@
                 <span id = "email-error"></span>
             </div>
 
-            <div class ="input-group">
+                 <div class="input-group">
                 <label>Your Message</label>
-                <textarea rows="5" placeholder="Enter your message" id = "contact-message" onkeyup="validateMessage()></textarea>
-                <span id = "message-error"></span>
+                <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
             </div>
-
-          <button onclick = "return validateForm()">Submit</button>
-          <span id = "submit-error"></span>
-        </form>
-
+            
+            <form onsubmit="return validateForm()">
+                <button type="submit">Submit</button>
+                <span id="submit-error"></span>
+            </form>
     </div>
       <script src = "script.js"></script>
 
